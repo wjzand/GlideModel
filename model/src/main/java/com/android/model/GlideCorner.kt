@@ -64,6 +64,7 @@ class GlideCorner:Transformation<Bitmap>{
         return BitmapResource.obtain(bitmap,bitmapPool)!!
     }
 
+
     /**
      * 处理圆角
      */

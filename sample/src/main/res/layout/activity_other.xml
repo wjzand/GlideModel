@@ -8,57 +8,109 @@
         tools:ignore="MissingConstraints"
         tools:context=".OtherActivity">
 
-    <CheckBox
-            android:id="@+id/checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="是否使用网络图片"/>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <Button
-            android:id="@+id/originalBt"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:text="加载原图"
-            app:layout_constraintTop_toBottomOf="@id/checkbox"/>
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <ImageView
-            android:id="@+id/originalImg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/originalBt"/>
+            <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否使用网络图片"/>
+
+            <Button
+                    android:id="@+id/originalBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="加载原图"
+                    app:layout_constraintTop_toBottomOf="@id/checkbox"/>
+
+            <ImageView
+                    android:id="@+id/originalImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/originalBt"/>
+
+            <TextView
+                    android:id="@+id/originalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/originalImg"/>
 
 
-    <Button
-            android:id="@+id/circleBt"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:text="圆形图片"
-            app:layout_constraintTop_toBottomOf="@id/originalImg"/>
-    
-    <ImageView
-            android:id="@+id/circleImg"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/circleBt"/>
+            <Button
+                    android:id="@+id/circleBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="圆形图片"
+                    app:layout_constraintTop_toBottomOf="@id/originalText"/>
 
-    <Button
-            android:id="@+id/scaleAndCircleBt"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:text="等比变化后的圆形图片"
-            app:layout_constraintTop_toBottomOf="@id/circleImg"/>
+            <ImageView
+                    android:id="@+id/circleImg"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/circleBt"/>
 
-    <ImageView
-            android:id="@+id/scaleAndCircleImg"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scaleAndCircleBt"/>
+            <Button
+                    android:id="@+id/scaleAndCircleBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="等比变化后的圆形图片"
+                    app:layout_constraintTop_toBottomOf="@id/circleImg"/>
+
+            <ImageView
+                    android:id="@+id/scaleAndCircleImg"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/scaleAndCircleBt"/>
+
+            <Button
+                    android:id="@+id/scaleAndRoundBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="等比变化后的圆角为40图片"
+                    app:layout_constraintTop_toBottomOf="@id/scaleAndCircleImg"/>
+
+            <ImageView
+                    android:id="@+id/scaleAndRoundImg"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/scaleAndRoundBt"/>
+
+            <Button
+                    android:id="@+id/scaleAndRoundCusBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="等比变化后的圆角为20,40,60,0图片"
+                    app:layout_constraintTop_toBottomOf="@id/scaleAndRoundImg"/>
+
+            <ImageView
+                    android:id="@+id/scaleAndRoundCusImg"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/scaleAndRoundCusBt"/>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
 
 
 </android.support.constraint.ConstraintLayout>
