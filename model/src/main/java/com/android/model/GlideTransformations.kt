@@ -17,7 +17,7 @@ import com.bumptech.glide.request.target.Target
 object GlideTransformations {
 
     /**
-     * 等比裁剪
+     * 圆形
      */
     fun createCircleOptions():RequestOptions{
         return RequestOptions().circleCrop()
